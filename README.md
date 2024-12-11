@@ -1,6 +1,6 @@
 # Qubic AMD GPU trainer
 
-This is [Qubic](https://www.qubic.org) AMD GPU trainer (mining software), only support Windows (10 or 11), for Qubic Epoch 137 (2024.11.27 to 2024.12.4).
+This is [Qubic](https://www.qubic.org) AMD GPU trainer (mining software), only support Windows (10 or 11), for Qubic Epoch 139 (2024.12.11 to 2024.12.18).
 
 ## You need to install
 
@@ -20,6 +20,7 @@ This is [Qubic](https://www.qubic.org) AMD GPU trainer (mining software), only s
 + gfx1011: RDNA  (AMD Radeon Pro 5600M)
 + gfx1031: RDNA2 (AMD Radeon RX 6700, 6700 XT, 6700M, 6750 XT, 6800M)
 + gfx1034: RDNA2 (AMD Radeon RX 6400, 6500 XT)
++ gfx1102: RDNA3 (AMD Radeon RX 7600, 7600 XT)
 
 ### Untested
 
@@ -28,17 +29,16 @@ This is [Qubic](https://www.qubic.org) AMD GPU trainer (mining software), only s
 + gfx1035: RDNA2 (AMD Radeon(TM) Graphics)
 + gfx1100: RDNA3 (AMD Radeon RX 7900 XT)
 + gfx1101: RDNA3 (AMD Radeon RX 7700 XT, 7800 XT)
-+ gfx1102: RDNA3 (AMD Radeon RX 7600, 7600 XT)
 
 ## Performance for Qubic Epoch 137
 
-+ For AMD Radeon RX 6700 XT, at GPU clock 2000 M and memory clock 2000 M, GPU Voltage 0.875 V: **550 it/s**, 120 W.
-+ For AMD Radeon RX 6500 XT, at GPU clock 2000 M: 160 it/s.
-+ For AMD Radeon RX 5700, at GPU clock 1700 M and memory clock 1750 M, GPU Voltage 0.9 V: 290 it/s, 120 W.
++ AMD Radeon RX 6700 XT, 2000 M, 0.875 V: 300 it/s, 4.8 Shares/12 hours, 0.026 Solution/12 hours, 110 W.
++ AMD Radeon RX 7600, 2200 M, 0.80 V: 300 it/s, 4.8 Shares/12 hours, 0.026 Solution/12 hours, 90 W.
++ AMD Radeon RX 5700, 1700 M, 0.95 V: 235 it/s, 3.8 Shares/12 hours, 0.021 Solution/12 hours, 130 W.
 
 ## Miner fee rate
 
-### 16%
+### 10%
 
 ## Usage
 
@@ -47,6 +47,8 @@ This is [Qubic](https://www.qubic.org) AMD GPU trainer (mining software), only s
 + Edit `Qubic-AMD\appsettings.json`, change the "accessToken" to your own.
 + Run `Qubic-AMD\qli-Client.exe`.
 
-### Skill
+### Skills
 
-Run `qli-worker-gpu-amd-E137.exe AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0000000000000000000000000000000000000000000000000000000000000000 0 12` to test whether the algorithm kernel for AMD GPU can work properly.
++ Run `qli-worker-gpu-amd-E139.exe AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0000000000000000000000000000000000000000000000000000000000000000 0 8` to test whether the algorithm kernel for AMD GPU can work properly.
++ The "cpuThreads" parameter in `appsettings.json` means the number of GPU Card you want to use.
++ Please do not change any parameters in `appsettings.json` except for "alias", "accessToken", "cpuThreads" and "LogLevel".
