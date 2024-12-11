@@ -4,13 +4,9 @@ This is [Qubic](https://www.qubic.org) AMD GPU trainer (mining software), only s
 
 ## You need to install
 
-+ .NET 8.0 Runtime:
-<https://aka.ms/dotnet-core-applaunch?missing_runtime=true&arch=x64&rid=win-x64&os=win10&apphost_version=8.0.10>
-+ Microsoft Visual C++ Redistributable:
-<https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170>
-<https://aka.ms/vs/17/release/vc_redist.x64.exe>
-+ AMD card driver:
-<https://drivers.amd.com/drivers/whql-amd-software-adrenalin-edition-24.10.1-win10-win11-oct-rdna.exe>
++ [.NET 8.0 Runtime](https://aka.ms/dotnet-core-applaunch?missing_runtime=true&arch=x64&rid=win-x64&os=win10&apphost_version=8.0.10)
++ [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
++ [AMD Radeon Graphics Driver](https://www.amd.com/en/support/download/drivers.html)
 
 ## Supported cards
 
@@ -30,7 +26,7 @@ This is [Qubic](https://www.qubic.org) AMD GPU trainer (mining software), only s
 + gfx1100: RDNA3 (AMD Radeon RX 7900 XT)
 + gfx1101: RDNA3 (AMD Radeon RX 7700 XT, 7800 XT)
 
-## Performance for Qubic Epoch 137
+## Performance for Qubic Epoch 139
 
 + AMD Radeon RX 6700 XT, 2000 M, 0.875 V: 300 it/s, 4.8 Shares/12 hours, 0.026 Solution/12 hours, 110 W.
 + AMD Radeon RX 7600, 2200 M, 0.80 V: 300 it/s, 4.8 Shares/12 hours, 0.026 Solution/12 hours, 90 W.
