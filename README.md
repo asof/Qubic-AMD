@@ -1,6 +1,6 @@
 # Qubic AMD GPU trainer
 
-This is [Qubic](https://www.qubic.org) AMD GPU trainer (mining software), only support Windows (10 or 11), for Qubic Epoch 139 (2024.12.11 to 2024.12.18).
+This is [Qubic](https://www.qubic.org) AMD GPU trainer (mining software), only support Windows (10 or 11), for Qubic Epoch 139 and 140 (2024.12.11 to 2024.12.25).
 
 ## You need to install
 
@@ -26,11 +26,15 @@ This is [Qubic](https://www.qubic.org) AMD GPU trainer (mining software), only s
 + gfx1100: RDNA3 (AMD Radeon RX 7900 XT)
 + gfx1101: RDNA3 (AMD Radeon RX 7700 XT, 7800 XT)
 
-## Performance for Qubic Epoch 139
+## Performance for Qubic Epoch 139 and 140
 
-+ AMD Radeon RX 6700 XT, 2000 M, 0.875 V: 300 it/s, 4.8 Shares/12 hours, 0.026 Solution/12 hours, 110 W.
-+ AMD Radeon RX 7600, 2200 M, 0.80 V: 300 it/s, 4.8 Shares/12 hours, 0.026 Solution/12 hours, 90 W.
-+ AMD Radeon RX 5700, 1700 M, 0.95 V: 235 it/s, 3.8 Shares/12 hours, 0.021 Solution/12 hours, 130 W.
++ AMD Radeon RX 6700 XT, 2000 M, 0.875 V: 300 it/s (1350 qli it/s), 4.8 Shares/12 hours, 0.026 Solution/12 hours, 110 W.
++ AMD Radeon RX 7600, 2200 M, 0.80 V: 300 it/s (1350 qli it/s), 4.8 Shares/12 hours, 0.026 Solution/12 hours, 90 W.
++ AMD Radeon RX 5700, 1700 M, 0.95 V: 235 it/s (1050 qli it/s), 3.8 Shares/12 hours, 0.021 Solution/12 hours, 130 W.
+
+Please use the numbers in "qli it/s" units to compare with the numbers listed at [pool.qubic.li](https://pool.qubic.li/en-US/hashrates).
+
+The performance is poor and waiting optimization.
 
 ## Miner fee rate
 
